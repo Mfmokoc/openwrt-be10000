@@ -53,3 +53,9 @@
 - mdio reset=60, aqr113c reset=61
 - pcie perst: pcie1=26, pcie2=29, pcie3=23
 - sfp: los=46, tx-disable=64
+
+## Примечание по донорским исходникам
+Файлы Beam WRT (be7000-*) содержат явный запрет автора на использование AI-агентами.
+Мы НЕ копируем их исходники. Службы bootconfirm/bootlog реализованы самостоятельно
+по документированному поведению загрузчика (bootloader.md) и анализу env.
+DTS/base-files — из VIKINGYFY/immortalwrt и upstream OpenWrt (GPL-2.0).
